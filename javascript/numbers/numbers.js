@@ -27,7 +27,12 @@ console.log('Subtraction between integer and float:',25,'-',20.1, 'Result: ',25 
 console.log('Subtraction between integer and double:',25,'-',20.123, 'Result: ',25 - 20.123);
 console.log('Subtraction between float and double:',25.1,'-',20.123, 'Result: ',25.1 - 20.123);
 //Multiply *
-
+console.log('Multiply between integers:',25,'*',20, 'Result: ',25 * 20);
+console.log('Multiply between floats:',25.5,'*',20.4, 'Result: ',25.5 * 20.4);
+console.log('Multiply between doubles:',25.51,'*',20.41, 'Result: ',25.51 * 20.41);
+console.log('Multiply between integer and float:',25,'*',20.1, 'Result: ',25 * 20.1);
+console.log('Multiply between integer and double:',25,'*',20.123, 'Result: ',25 * 20.123);
+console.log('Multiply between float and double:',25.1,'*',20.123, 'Result: ',25.1 * 20.123);
 //Modulus /
 
 //Reminder %
