@@ -50,8 +50,12 @@ console.log('Remainder between integer and double:',5,'%',2.123, 'Result: ',5 % 
 console.log('Remainder between float and double:',5.1,'%',2.123, 'Result: ',5.1 % 2.123);
 
 //Built-in parseInt()
-console.log("Using parseInt");
+console.log("Using parseInt. This convert a string number in a number");
 console.log("120 in base 10:", parseInt('120',10)); //decimal base
 console.log("120 in base-8:",parseInt('120',8)); // base-8 (octal)
 console.log("120 in base-16:",parseInt('120',16)); //hexadecimal base
 console.log("120 in base-2:", parseInt('120',2)); //binary base
+
+console.log("Trying to convert a string without digits using parseInt");
+console.log("hello is not a number (NaN):",parseInt("hello",10)); // result NaN. NaN is a special value in Javascript that means 'Not a Number'
+console.log("Result is NaN because the string is not number",'\n',"NaN is a special value");
