@@ -33,6 +33,7 @@ console.log('Multiply between doubles:',5.51,'*',2.41, 'Result: ',5.51 * 2.41);
 console.log('Multiply between integer and float:',5,'*',2.1, 'Result: ',5 * 2.1);
 console.log('Multiply between integer and double:',5,'*',2.123, 'Result: ',5 * 2.123);
 console.log('Multiply between float and double:',5.1,'*',2.123, 'Result: ',5.1 * 2.123);
+
 //Modulus /
 console.log('Modulus between integers:',5,'/',2, 'Result: ',5 / 2);
 console.log('Modulus between floats:',5.5,'/',2.4, 'Result: ',5.5 / 2.4);
@@ -47,3 +48,10 @@ console.log('Remainder between doubles:',5.51,'%',2.41, 'Result: ',5.51 % 2.41);
 console.log('Remainder between integer and float:',5,'%',2.1, 'Result: ',5 % 2.1);
 console.log('Remainder between integer and double:',5,'%',2.123, 'Result: ',5 % 2.123);
 console.log('Remainder between float and double:',5.1,'%',2.123, 'Result: ',5.1 % 2.123);
+
+//Built-in parseInt()
+console.log("Using parseInt");
+console.log("120 in base 10:", parseInt('120',10)); //decimal base
+console.log("120 in base-8:",parseInt('120',8)); // base-8 (octal)
+console.log("120 in base-16:",parseInt('120',16)); //hexadecimal base
+console.log("120 in base-2:", parseInt('120',2)); //binary base
