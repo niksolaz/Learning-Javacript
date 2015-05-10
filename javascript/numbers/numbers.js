@@ -59,3 +59,16 @@ console.log("120 in base-2:", parseInt('120',2)); //binary base
 console.log("Trying to convert a string without digits using parseInt");
 console.log("hello is not a number (NaN):",parseInt("hello",10)); // result NaN. NaN is a special value in Javascript that means 'Not a Number'
 console.log("Result is NaN because the string is not number",'\n',"NaN is a special value");
+
+console.log("Coverting a string using the unary operator", "+'42'", ' is equal to ', +'42');
+console.log("Unary operator converts a string with digits using + in front of the string");
+console.log('Result: ' +'42', '42');
+
+
+/**
+ * TODO
+ * - parseFloat
+ * - NaN
+ * - NaN operations
+ * - Infinite
+*/
