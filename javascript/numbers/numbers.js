@@ -40,4 +40,10 @@ console.log('Modulus between doubles:',5.51,'/',2.41, 'Result: ',5.51 / 2.41);
 console.log('Modulus between integer and float:',5,'/',2.1, 'Result: ',5 / 2.1);
 console.log('Modulus between integer and double:',5,'/',2.123, 'Result: ',5 / 2.123);
 console.log('Modulus between float and double:',5.1,'/',2.123, 'Result: ',5.1 / 2.123);
-//Reminder %
+//Remainder %
+console.log('Remainder between integers:',5,'%',2, 'Result: ',5 % 2);
+console.log('Remainder between floats:',5.5,'%',2.4, 'Result: ',5.5 % 2.4);
+console.log('Remainder between doubles:',5.51,'%',2.41, 'Result: ',5.51 % 2.41);
+console.log('Remainder between integer and float:',5,'%',2.1, 'Result: ',5 % 2.1);
+console.log('Remainder between integer and double:',5,'%',2.123, 'Result: ',5 % 2.123);
+console.log('Remainder between float and double:',5.1,'%',2.123, 'Result: ',5.1 % 2.123);
