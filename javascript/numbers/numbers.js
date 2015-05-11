@@ -64,6 +64,14 @@ console.log("Coverting a string using the unary operator", "+'42'", ' is equal t
 console.log("Unary operator converts a string with digits using + in front of the string");
 console.log('Result: ' +'42', '42');
 
+//Built-in parseFloat
+console.log("Using parseFloat. This convert a string number in a float number");
+console.log("The following examples all return 3.14");
+console.log(parseFloat('3.14'));
+console.log(parseFloat('314e-2'));
+console.log(parseFloat('0.0314E+2'));
+console.log(parseFloat('3.14more non-digit characteres'));
+
 
 /**
  * TODO
