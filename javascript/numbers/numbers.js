@@ -72,11 +72,16 @@ console.log(parseFloat('314e-2'));
 console.log(parseFloat('0.0314E+2'));
 console.log(parseFloat('3.14more non-digit characteres'));
 
+//NaN and NaN operations
+console.log("NaN property is value rapresenting Not-A-Number");
+console.log("'string' is not integer number, so result: ",parseInt('string'));
+console.log("'string.string' is not float numeber, so result: ",parseFloat('string.string'));
+// Trying to convert a string without digits with the unary operator.
+// Because the string does not have digits the unary opearator returns NaN
+console.log("Trying to convert a string(+'st') => ",+'st'); 
+console.log(NaN + 5);
 
 /**
  * TODO
- * - parseFloat
- * - NaN
- * - NaN operations
  * - Infinite
 */
