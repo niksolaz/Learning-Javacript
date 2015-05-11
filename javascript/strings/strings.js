@@ -10,3 +10,6 @@ console.log('HELLO WORLD'.replace('WORLD','WALTER').toLowerCase());
 console.log('HELLO WORLD'.replace('WORLD','WALTER').toUpperCase());
 console.log('HELLO WORLD'.charAt(6).toLowerCase());
 console.log('Walter White'.charAt(8).toUpperCase());
+
+var a = 'Me too are a string';
+console.log(a);
