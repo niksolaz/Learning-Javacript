@@ -80,6 +80,13 @@ console.log("'string.string' is not float numeber, so result: ",parseFloat('stri
 // Because the string does not have digits the unary opearator returns NaN
 console.log("Trying to convert a string(+'st') => ",+'st'); 
 console.log(NaN + 5);
+console.log("Is NaN??", isNaN(NaN), isNaN(NaN + 5), isNaN(parseInt("hello")));
+console.log("Is NaN??", isNaN(1), isNaN("hello"), isNaN(3.2424));
+console.log("this function returns a boolean value",isNaN(4 === 4));
+// isNaN(4 === '5') => (translated to) isNaN(false) => (translated to) false
+// Infinite
+console.log("This value is infinity, result of 1/0: ", 1/0);
+console.log("This value is -infinity, result of -1/0: ", -1/0);
 
 /**
  * TODO
