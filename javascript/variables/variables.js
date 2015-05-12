@@ -35,3 +35,17 @@ var a = "I am";
 var b = " legend";
 var c = a + b;
 console.log(c);
+
+var name = "Nick", age = 39, country = "Italy";
+console.log(name +" "+ age +" "+ country);
+console.log("My name is %s and I have %d years and I live in %s",name,age,country);
+
+var x = ['a','b','c','d'];
+console.log(x[2]);
+
+var person = {
+    name: 'Nick',
+    city: 'Asti'
+};
+console.log(person);
+console.log(person.name,person.city);
