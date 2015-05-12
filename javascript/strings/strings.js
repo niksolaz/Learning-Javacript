@@ -11,5 +11,21 @@ console.log('HELLO WORLD'.replace('WORLD','WALTER').toUpperCase());
 console.log('HELLO WORLD'.charAt(6).toLowerCase());
 console.log('Walter White'.charAt(8).toUpperCase());
 
-var a = 'Me too are a string';
+// Methods of the strings
+var a = 'Me too are a string'; // return a string : Me too are a string
 console.log(a);
+
+var a = "I am a string";
+console.log(a.indexOf('am')); // return 2
+
+var a = "I am a string";
+console.log(a.search('am')); // return 2
+
+var a = "I am a string";
+console.log(a.slice(0,10)); // extracting string parts
+var a = "I am a string";
+console.log(a.slice(-9,-1));
+var a = "I am a string";
+console.log(a.slice(9));
+var a = "I am a string";
+console.log(a.slice(-6));
