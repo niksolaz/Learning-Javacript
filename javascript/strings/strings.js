@@ -22,10 +22,29 @@ var a = "I am a string";
 console.log(a.search('am')); // return 2
 
 var a = "I am a string";
-console.log(a.slice(0,10)); // extracting string parts
+console.log(a.slice(0,10)); // extracting string parts, slice(from,to)
 var a = "I am a string";
 console.log(a.slice(-9,-1));
 var a = "I am a string";
 console.log(a.slice(9));
 var a = "I am a string";
 console.log(a.slice(-6));
+
+var a = "I am a string";
+console.log(a.substring(3,11)); //substring(from,to)
+
+var a = "I am a string";
+console.log(a.substr(7,6)); //substr(from,length)
+
+//concatenating strings
+var a = "Hello"; 
+var b = "World";
+var c = a.concat(" ",b);
+console.log(a);
+console.log(b);
+console.log(c);
+
+var a = "hello"+" "+"World";
+var b = "hello".concat(" ","world");
+console.log(a);
+console.log(b);
