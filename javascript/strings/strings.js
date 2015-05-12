@@ -48,3 +48,7 @@ var a = "hello"+" "+"World";
 var b = "hello".concat(" ","world");
 console.log(a);
 console.log(b);
+
+//Method split
+var a = "Hello World my little girl";
+console.log(a.split(","));
