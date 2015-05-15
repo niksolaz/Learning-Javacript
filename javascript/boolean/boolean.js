@@ -27,7 +27,12 @@ console.log('The a == c is not equal, beacuse a is number and c is string. So re
 
 console.log((a >= b) && (b <= a));
 
-console.log(Boolean(''));
-console.log(Boolean(234));
+console.log(Boolean('')); // false
+console.log(Boolean(234)); // true
+console.log(Boolean('myString')); // true
+
+var Z = "wall";
+var K = "house";
+console.log( Z === K);
 
 
