@@ -80,6 +80,24 @@ console.log(cap.number);
 var address = city.nameCity +' '+ cap.number;
 console.log(address);
 
-// Undefinied Variables
+// Undefined Variables
 var undefined_Object;
-console.log('This variable is undefinied: ',undefined_Object);
+console.log('This variable is undefined: ',undefined_Object);
+
+// Array in variable
+var a = new Array();
+a[0] = 'zero';
+a[1] = 'one';
+a[2] = 'two';
+
+console.log('Position array: ',a);
+// Length of an array
+console.log('Array lenght:',a.length);
+// Array can also be written..
+var a = ['zero','one','two'];
+// Remember — the length of the array is one more than the highest index.
+a[5] = "five";
+console.log('Array:', a);
+console.log('Number array: ', a.length);
+console.log('Array numer 4: ',a[4]);
+console.log('Array:', a, "  -> length:", a.length);
