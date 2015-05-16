@@ -43,12 +43,28 @@ console.log("My name is %s and I have %d years and I live in %s",name,age,countr
 var x = ['a','b','c','d'];
 console.log(x[2]);
 
+//There are two basic ways to create an empty object
+var obj = new Object();
+// and ...
+var obj = {};
+// and ...
+function Person(name,city){
+    this.name = name;
+    this.city = city;
+}
+// Define an object
+var Me = new Person('Nick','Asti');
+console.log('Created Object Me : ',Me);
+console.log('So I print only Object Person : ', Me.name,Me.city);
+
+// Object JSON
 var person = {
     name: 'Nick',
     city: 'Asti'
 };
-console.log(person);
-console.log(person.name,person.city);
+// In this case , object person have two parameters,"name" and "city", with relative value, "Nick" and "Asti".
+console.log('Printing parameters and values',person);
+console.log('Printing values of the parameters name and city: ',person.name,person.city);
 
 var city = { nameCity: 'Asti'}
 var cap = {number: 14100};
