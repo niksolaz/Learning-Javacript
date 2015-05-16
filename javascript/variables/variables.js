@@ -80,5 +80,6 @@ console.log(cap.number);
 var address = city.nameCity +' '+ cap.number;
 console.log(address);
 
+// Undefinied Variables
 var undefined_Object;
 console.log('This variable is undefinied: ',undefined_Object);
