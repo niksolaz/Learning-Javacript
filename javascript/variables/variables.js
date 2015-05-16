@@ -56,12 +56,18 @@ function Person(name,city){
 var Me = new Person('Nick','Asti');
 console.log('Created Object Me : ',Me);
 console.log('So I print only Object Person : ', Me.name,Me.city);
-
+// Access Object's properties
+Me.name = "Jessi"; //Second method is: Me["name"] = "Jessi";
+Me.city = "Alburquerque" //Second method is: Me["city"] = "Alburquerque";
+var newName = Me.name; //Second method is: var newName = Me["Jessi"];
+var newCity = Me.city; //Second method is: var newCity = Me["Alburquerque"];
+console.log(newName,newCity);
 // Object JSON
 var person = {
     name: 'Nick',
     city: 'Asti'
 };
+
 // In this case , object person have two parameters,"name" and "city", with relative value, "Nick" and "Asti".
 console.log('Printing parameters and values',person);
 console.log('Printing values of the parameters name and city: ',person.name,person.city);
