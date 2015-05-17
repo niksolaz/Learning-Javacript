@@ -141,9 +141,9 @@ myFunc2();
      ======= Function context =======
      var aA = 242; // This variables hides the global variable aA(10) in the Global context
      console.log(cC);
-     // myFunc does not find a definition of variable inside the function context.
-     // myFunc look for cC in the context where myFunc is defined (Global Context) and try to 
-     // find a definiton of the variable cC (4)
+     // myFunc does not find a definition of the variable cC inside the function context.
+     // myFunc look for cC in the context where myFunc is defined (Global Context). 
+     // It finds a definiton of the variable cC (4) in the Global Context
      
      console.log(dD); // <- Exception!
      // Same as above. The only difference is that myFunc will not find a definition of dD in the Function Context
