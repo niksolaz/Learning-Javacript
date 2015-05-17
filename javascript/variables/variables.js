@@ -101,3 +101,13 @@ console.log('Array:', a);
 console.log('Number array: ', a.length);
 console.log('Array numer 4: ',a[4]);
 console.log('Array:', a, "  -> length:", a.length);
+
+//Global Variable and Local Variable
+
+var aA = 10; // global variable works outside the function , but is recalled into the function
+function xX(){
+    var bB = aA + 5;// local variable works into function
+    console.log(bB);
+}
+xX();
+console.log(aA);
