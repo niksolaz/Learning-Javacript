@@ -103,7 +103,9 @@ console.log('Array numer 4: ',a[4]);
 console.log('Array:', a, "  -> length:", a.length);
 
 //Global Variable and Local Variable
-
+console.log("=====================");
+console.log("GLOBAL vs LOCAL variables");
+console.log("=====================")
 var aA = 10; // global variable works outside the function , but is recalled into the function
 function xX(){
     var bB = aA + 5; // bB is defined inside the function context. You can still use variable defined in parent context ("Closure")
@@ -111,4 +113,46 @@ function xX(){
 }
 xX();
 console.log(aA); // Variable aA exists in this context
-console.log(bB); // This variable does not exist in this context;
+// console.log(bB); // This variable does not exist in this context; It would throw an exception in the code
+
+
+// aA is a global variable inside this javascript file.
+console.log("Global variable aA:", aA);
+function myFunc(){
+    var aA = 4; // It defines a new variable called aA inside the context of the function because I have used var in front of the name.
+    console.log("Local variable aA:", aA); 
+    // aA in this function will disappear after the function finished to execute the code.
+    // the Global variable aA is still available after the execution of this function
+}
+
+function myFunc2(){
+    console.log("Global variable aA used inside the function:", aA);
+}
+
+myFunc();
+myFunc2();
+
+/**
+ * ====== Global Context (file)=====
+ * var aA = 10;
+ * var cC = 4;
+ * 
+ * myFunc(){
+     ======= Function context =======
+     var aA = 242; // This variables hides the global variable aA(10) in the Global context
+     console.log(cC);
+     // myFunc does not find a definition of variable inside the function context.
+     // myFunc look for cC in the context where myFunc is defined (Global Context) and try to 
+     // find a definiton of the variable cC (4)
+     
+     console.log(dD); // <- Exception!
+     // Same as above. The only difference is that myFunc will not find a definition of dD in the Function Context
+     // myFunc will search will look for in the previous context (Global context) for a definition but it will not find it.
+     // An exception will be thrown in this case and the program will stop (if the exception has not been caught!)
+     
+ }
+ * 
+ * 
+ * 
+ * 
+ * */
