@@ -106,8 +106,9 @@ console.log('Array:', a, "  -> length:", a.length);
 
 var aA = 10; // global variable works outside the function , but is recalled into the function
 function xX(){
-    var bB = aA + 5;// local variable works into function
-    console.log(bB);
+    var bB = aA + 5; // bB is defined inside the function context. You can still use variable defined in parent context ("Closure")
+    console.log(bB); // printing variable bB
 }
 xX();
-console.log(aA);
+console.log(aA); // Variable aA exists in this context
+console.log(bB); // This variable does not exist in this context;
