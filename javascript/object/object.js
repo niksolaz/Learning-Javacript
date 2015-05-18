@@ -21,19 +21,46 @@ console.log(object.one = object.three); //{four:12}
 console.log(object.one = object.three.four); //12
 
 console.log("==========");
-
+// Insert variables into object
 var a = "foo", // In this case , we have created three objects a,b,c  
-    b = 42,
+    b = 42,  // These are variables that are to be inserted into an object
     c = {};
 var o = {   // We have set parameters a,b,c with value of the parameters var a,b,c
-    a:a,
+    a:a,    
     b:b,
     c:c
 };
 var x = {a:12,b:"ala",c:{ a:a,b:b,c:c}}; //parameters first a,b,c are several from c:{a,b,c}
-
+                                         // the property  are different into object x
+                                         
 console.log(a); // print "foo"
 console.log(b); // print 42
 console.log(c); // print {}
 console.log(o); // print {a: 'foo', b: 42, c: {}}
 console.log(x); // print { a: 12, b: 'ala', c: { a: 'foo', b: 42, c: {} } }
+
+console.log("==========");
+//Duplicate property names
+console.log("Duplicate property names");
+
+var a = {x: 1, x: 2};  //the second property overwrite the first
+console.log("var a = {x: 1, x: 2};");
+console.log("The second property overwrite the first: ",a); // {x: 2}
+/* 
+In ECMAScript 5 strict mode code, duplicate property names were considered a SyntaxError.  
+With the introduction of computed property names making duplication possible at runtime, 
+ECMAScript 6 has removed this restriction.
+*/
+/*
+function haveES6DuplicatePropertySemantics(){
+    "use strict";
+    try{
+        ({prop:1,prop:2});
+        //No error thrown, duplicate property names alloew in strict mode
+    }catch(e){
+        // Error thrown, duplicates prohibited in strict mode
+        return false;
+    }
+}
+haveES6DuplicatePropertySemantics()
+*/
