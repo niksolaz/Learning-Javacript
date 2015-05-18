@@ -56,7 +56,7 @@ function haveES6DuplicatePropertySemantics(){
     "use strict";
     try{
         ({prop:1,prop:2});
-        //No error thrown, duplicate property names alloew in strict mode
+        //No error thrown, duplicate property names allowed in strict mode
     }catch(e){
         // Error thrown, duplicates prohibited in strict mode
         return false;
@@ -64,3 +64,15 @@ function haveES6DuplicatePropertySemantics(){
 }
 haveES6DuplicatePropertySemantics()
 */
+console.log("==========");
+console.log("Methods definitions");
+//Methods definitions
+//A property of an object can also refer to a function or getter or setter method
+//check the files: getter and setter methods in the object directory
+var o ={
+    property: function ([parameters]){},
+    get property(){},
+    set property(value){},
+};
+
+
