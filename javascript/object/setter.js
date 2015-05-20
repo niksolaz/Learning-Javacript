@@ -19,3 +19,13 @@ It is not possible to simultaneously have a setter on a property that holds an a
 - It must not appear in an object literal with another set or with a data entry for the same property.
     ( { set x(v) { }, set x(v) { } } and { x: ..., set x(v) { } } are forbidden )
 */
+console.log("Example");
+
+var o = {
+    set currents (str){
+      this.log[this.log.lenght] = str;  
+    },
+    log:[]
+}
+console.log(o.currents);
+console.log("If you want to remove the setter, you can just delete it: delete o.currents");
