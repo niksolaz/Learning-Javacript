@@ -59,5 +59,29 @@ for (var i = 0; i <=5; i++) {
 }
 console.log(i);
 
+//The switch statement can be used for multiple branches based on a number or string
+console.log("=== SWITCH...CASE ===");
+/*
+The switch reference expression is compared with the expressions of the various houses. 
+As soon as you locate a corresponding expression you run the statement block associated with it. 
+If there is no match will run the lock associated with the default keyword.
+*/
+
+var z = "One";
+
+switch (z.length) {
+    case 1:
+        // code
+        z = z<3;
+        console.log("One length is less 3");
+        break;
+    case 2:
+        z = z>3;
+        console.log("One length is greater 3");
+    
+    default:
+        // code
+        console.log("One length is equal 3");
+}
 
 
