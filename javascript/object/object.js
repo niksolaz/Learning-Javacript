@@ -69,10 +69,20 @@ console.log("Methods definitions");
 //Methods definitions
 //A property of an object can also refer to a function or getter or setter method
 //check the files: getter and setter methods in the object directory
+/* 
 var o ={
     property: function ([parameters]){},
     get property(){},
     set property(value){},
 };
+*/
 
-
+//Boolean Object
+console.log("==========");
+console.log("Boolean Object");
+//equivalent to o = new Boolean(true);
+var o = new Object(true);
+console.log(o);
+//equivalent to o = new Boolean(false);
+var o = new Object(Boolean());
+console.log(o);

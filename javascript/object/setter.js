@@ -23,7 +23,7 @@ console.log("Example");
 
 var o = {
     set currents (str){
-      this.log[this.log.lenght] = str;  
+      this.log[this.log.length] = str;  
     },
     log:[]
 }
