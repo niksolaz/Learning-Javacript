@@ -81,8 +81,31 @@ var o ={
 console.log("==========");
 console.log("Boolean Object");
 //equivalent to o = new Boolean(true);
-var o = new Object(true);
+var o = new Object(true);      //new Boolean([value])  where value is optional. The initial value of the Boolean object.
 console.log(o);
 //equivalent to o = new Boolean(false);
 var o = new Object(Boolean());
 console.log(o);
+
+/*The value passed as the first parameter is converted to a boolean value, if necessary.
+  If value is omitted or is 0, -0, null, false, NaN, undefined, or the empty string(""),
+  the object has an initial value of false.
+  All other values, including any object or the string "false", create an object with an initial value of true.
+*/
+var x = new Boolean(false);
+if(x){
+    return ("This code is executed"); //For example, the condition in the following if statement evaluates to true
+}
+
+var x = false;
+if(x){
+    return("This code is executed"); //For example, the condition in the following if statement evaluates to false
+}
+
+/* If you specify any object, including a Boolean object whose value is false, 
+   as the initial value of a Boolean object, the new Boolean object has a value of true.
+*/
+var IamFalse = new Boolean(false); // initial value of false
+var example_1 = new Boolean(IamFalse) // initial value of true
+var IamString = new String('HelloString'); // string object
+var example_2 = new Boolean(IamString); //initial value of true
