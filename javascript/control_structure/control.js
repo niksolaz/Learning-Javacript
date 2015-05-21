@@ -23,16 +23,26 @@ the body of the loop is executed at least once:
 
 console.log("=== WHILE ===");
 //While being a true condition will execute the instructions contained in the code block
-var x = 10;
+var x = 1;
 var i = 1;
-while(i == x){ 
+while(i <= 5 ){ 
     // do something;
 /*
 Key requirement in the use of the while statement is that the instructions 
 contained in the code block change the condition, otherwise you are likely to run into an infinite loop.
 */
-    i += 1;
-    return(i);
+    x = x*i;
+    i++;
 } 
+
+console.log("=== DO...WHILE ===");
+
+var x = 1;
+var i = 1;
+do{
+    x = x*i;
+    i++;
+}
+while(i <= 5)
 
 
