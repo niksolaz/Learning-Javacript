@@ -45,4 +45,19 @@ do{
 }
 while(i <= 5)
 
+/*
+JavaScript's for loop is the same as that in C and Java: 
+it lets you provide the control information for your loop on a single line.
+*/
+
+console.log("=== FOR ===");
+
+var y = 1;
+for (var i = 0; i <=5; i++) {
+ //will execute 6 times
+    i = y * i;
+}
+console.log(i);
+
+
 
