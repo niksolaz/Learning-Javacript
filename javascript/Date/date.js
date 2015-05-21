@@ -24,3 +24,9 @@ console.log(birthdayOne);
 console.log(birthdayTwo);
 console.log(birthdayThree);
 console.log(birthdayFour);
+
+
+//Example: Two digit years map to 1900 - 1999
+var date = new Date(98,1); // Sun Feb 01 1998 00:00:00 GMT+0000 (UTC)
+console.log(date);
+
