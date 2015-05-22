@@ -35,3 +35,20 @@ followed by:
  }
  square(4); // call the function
  console.log(square(4)); // show the call of the function
+ 
+ //Example 2 :
+ //function array:
+ function myFunc(theObject){  //name function  "myFunc" with arguments "theObject"
+     theObject.make = "Fiat";  //defined function 
+ }
+ 
+ var myCar = {make:"Ferrari", model:"458",year: 2015}; //Object array "myCar"
+ var objNumberOne, objNumberTwo; 
+ 
+ objNumberOne = myCar.make; // get the value "Ferrari"
+ 
+ myFunc(myCar);
+ objNumberTwo = myCar.make; // get the value "Fiat"
+ 
+ console.log(objNumberOne,objNumberTwo); //show the calls of the two object 
+ console.log(myFunc(myCar)); //undefinied . Function is not defined 
