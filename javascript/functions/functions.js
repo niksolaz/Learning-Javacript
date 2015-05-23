@@ -52,3 +52,28 @@ followed by:
  
  console.log(objNumberOne,objNumberTwo); //show the calls of the two object 
  console.log(myFunc(myCar)); //undefinied . Function is not defined 
+ 
+ /*
+ Note: Assigning a new object to the parameter will not have any effect outside the function, 
+ because this is changing the value of the parameter rather than the value of one of the object's properties:
+ */
+ //Example 2.1:
+ function myFunc(theObject){
+  theObject = {make:"Fiat", model:"Panda",year:"1979"}; // new object to the parameter
+ }
+ var myCar = {make:"Ferrari", model:"458",year: 2015};
+ var objNumberOne,objNumberTwo;
+ 
+ objNumberOne = myCar.make; // gets the value "Ferrari"
+ 
+ myFunc(myCar);
+ objNumberTwo = myCar.make; // still gets the value "Ferrari"
+ 
+ console.log(objNumberOne,objNumberTwo);
+ 
+ //Fuction expressions:
+ console.log("==== Function Expressions ===");
+ 
+ var square = function(number){return number * number};
+ var x = square(4); // x gets the value 16
+ console.log(x);
