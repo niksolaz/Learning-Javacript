@@ -72,8 +72,22 @@ followed by:
  console.log(objNumberOne,objNumberTwo);
  
  //Fuction expressions:
+ 
  console.log("==== Function Expressions ===");
+ console.log("Declaration of the function expression");
  
  var square = function(number){return number * number};
  var x = square(4); // x gets the value 16
  console.log(x);
+ 
+ //Functon espressions are convenient when passing a function as an argument to another function.
+ // Example:
+ 
+ function map(f,a){
+  var result = [],  //created a new arrary
+      i;
+  for (i = 0; i != a.length; i++)
+    result[i] = f(a[i]);
+  return result;
+ }
+ 
