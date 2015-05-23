@@ -109,3 +109,4 @@ var IamFalse = new Boolean(false); // initial value of false
 var example_1 = new Boolean(IamFalse) // initial value of true
 var IamString = new String('HelloString'); // string object
 var example_2 = new Boolean(IamString); //initial value of true
+

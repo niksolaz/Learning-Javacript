@@ -1,67 +1,81 @@
 // Printing Variables
+
 var a = "string";
-console.log(a);
+console.log("String", a);
 
 var a = 1234;
+console.log("Number", a); 
+
+var a = "string" + 1234;
 console.log(a);
 
-var a = "string"+ 1234;
+var a = 4 + 5;  // somma due interi e assegna il valore dell'espressione alla variabile a   
 console.log(a);
 
-var a = 4 + 5;
+var a = 5 - 4; 
 console.log(a);
-var a = 5 - 4;
-console.log(a);
+
 var a = 4 * 5;
 console.log(a);
+
 var a = 5 / 2;
 console.log(a);
+
 var a = 5 % 4;
 console.log(a);
 
-var a = "1234"+"1234";
+var a = "1234"+"1234"; //qui concatena due valori stringhe ed assegna un valore alla variabile a
 console.log(a);
+var a = (+"1234") + (+"1");
+console.log("Value", a); // 1235
+
 var a = "5"*"4";
-console.log(a);
-var a = "xx"*"yy";
-console.log(a);
+console.log("'5' * '4' :", a); // 20
+
+var a = "xx" * "yy";
+console.log("'xx' * 'yy' :", a); //NaN
 
 var a = 10;
 var b = 5;
-console.log(a>b,a<b,a==b,a!=b);
-console.log(a+b,a*b,a-b,a/b,a%b);
+console.log("Operations:",a>b, a<b, a==b, a!=b);// true,false,false,true 
+console.log("Operations:",a+b, a*b, a-b, a/b, a%b); // 15, 50, 5, 2, 0
 
 var a = "I am";
 var b = " legend";
 var c = a + b;
-console.log(c);
+console.log("Result: ", c);
 
-var name = "Nick", age = 39, country = "Italy";
-console.log(name +" "+ age +" "+ country);
+var name = "Nick", 
+    age = 39, 
+    country = "Italy";
+console.log("My name is " + name +" and I have "+ age +" years and I live in "+ country);
 console.log("My name is %s and I have %d years and I live in %s",name,age,country);
 
 var x = ['a','b','c','d'];
-console.log(x[2]);
+console.log("Result:", x[2]); // 'c'
 
 //There are two basic ways to create an empty object
-var obj = new Object();
+var obj = new Object(); // new Object() => create a new instance of Object; then, it assign the result to the variable 'obj'
 // and ...
-var obj = {};
+var obj = {}; // Object literal
 // and ...
-function Person(name,city){
-    this.name = name;
-    this.city = city;
+function Person(firstName,theCity){
+    this.name = firstName;
+    this.city = theCity;
 }
+
 // Define an object
 var Me = new Person('Nick','Asti');
 console.log('Created Object Me : ',Me);
 console.log('So I print only Object Person : ', Me.name,Me.city);
+
 // Access Object's properties
 Me.name = "Jessi"; //Second method is: Me["name"] = "Jessi";
 Me.city = "Alburquerque" //Second method is: Me["city"] = "Alburquerque";
 var newName = Me.name; //Second method is: var newName = Me["Jessi"];
 var newCity = Me.city; //Second method is: var newCity = Me["Alburquerque"];
 console.log(newName,newCity);
+
 // Object JSON
 var person = {
     name: 'Nick',
@@ -156,3 +170,32 @@ myFunc2();
  * 
  * 
  * */
+ 
+ var myGlobalVariable = "aaaa";
+function myFirstOne(){
+    
+    var myFirstVariable = 2;
+    console.log("I am in myFirstOne...");
+    
+    function myInternalOne(arg1){
+        var internalVariable = 10;
+        var result =  internalVariable * myFirstVariable * arg1;
+        console.log("I am in myInternalOne...", myFirstVariable, internalVariable, arg1);
+        return result;
+    }   
+    console.log("Returning the definition of myInternalOne....");
+    return myInternalOne;
+}
+
+console.log("\n\n\n\n");
+var myVar = myFirstOne();
+console.log(myVar);
+console.log("\n\nResults:\n\n");
+var Result = myVar(2);
+console.log(Result);
+Result = myVar(24242);
+console.log(Result);
+Result = myVar("Not a number");
+console.log(Result);
+
+myVar = undefined;

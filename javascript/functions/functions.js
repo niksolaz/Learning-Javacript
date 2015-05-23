@@ -126,3 +126,18 @@ followed by:
  }
  getSum(); // returns "Nick this is my sum: 16"  
  console.log(getSum());
+ 
+// Block scope
+var a = 1;
+var b = 2;
+
+(function() {
+  var b = 3;
+  console.log("b internal", 3);
+  a = b + a; // <= a += b;
+})();
+
+console.log("a", a); // 4
+console.log("b", b); // 2
+
+

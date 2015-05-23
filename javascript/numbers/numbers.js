@@ -88,7 +88,3 @@ console.log("this function returns a boolean value",isNaN(4 === 4));
 console.log("This value is infinity, result of 1/0: ", 1/0);
 console.log("This value is -infinity, result of -1/0: ", -1/0);
 
-/**
- * TODO
- * - Infinite
-*/
