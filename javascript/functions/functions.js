@@ -91,3 +91,38 @@ followed by:
   return result;
  }
  
+ //Function scope
+ /*
+ Variables defined inside a function cannot be accessed from anywhere outside the function, because the variable is
+ defined  only in the scope of the function.
+ However, a function can access all variables and functions defined inside the scope in wich it is defined.
+ */
+ console.log("=== Function Scope ===");
+ //The following variables are defined in the global scope.
+ var myNumberOne = 13,
+     myNumberTwo = 76,
+     myNumeberThree = 4,
+     myName = "Nick";
+     
+ //this function defined in the global scope:
+ function mySum(){
+  return myNumberOne + myNumberTwo + myNumeberThree;
+ }
+ 
+ mySum(); // Returns 93
+ console.log(mySum()); // call the function in the global scope
+ 
+ // A nested function example regard what i wrote above.
+ 
+ function getSum(){
+  var myNumberOne = 2,
+      myNumberTwo = 4,
+      myNumeberThree = 10;
+  function add(){
+     return myName + " This is my sum: " + (myNumberOne + myNumberTwo + myNumeberThree);
+  }
+  return add();
+      
+ }
+ getSum(); // returns "Nick this is my sum: 16"  
+ console.log(getSum());
