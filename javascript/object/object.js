@@ -110,3 +110,18 @@ var example_1 = new Boolean(IamFalse) // initial value of true
 var IamString = new String('HelloString'); // string object
 var example_2 = new Boolean(IamString); //initial value of true
 
+
+// Prototype
+function Person(first, last) {
+  this.first = first;
+  this.last = last;
+  
+}
+
+Person.prototype.fullName = function fullName() {
+  return this.first + ' ' + this.last;
+};
+Person.prototype.fullNameReversed = function() {
+  return this.last + ', ' + this.first;
+};
+

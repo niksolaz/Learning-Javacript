@@ -2,6 +2,14 @@
 /*
 JavaScript has a similar set of control structures to other languages in the C family. 
 Conditional statements are supported by if and else; you can chain them together if you like:
+
+if (condition1) {
+    // block of code to be executed if condition1 is true
+} else if (condition2) {
+    // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+    // block of code to be executed if the condition1 is false and condition2 is false
+}
 */
 console.log("=== If ELSE ===");
 var name = "Nick";
