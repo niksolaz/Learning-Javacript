@@ -42,7 +42,7 @@ followed by:
      theObject.make = "Fiat";  //defined function 
  }
  
- var myCar = {make:"Ferrari", model:"458",year: 2015}; //Object array "myCar"
+ var myCar = {make:"Ferrari", model:"458",year: 2015}; //Object  "myCar"
  var objNumberOne, objNumberTwo; 
  
  objNumberOne = myCar.make; // get the value "Ferrari"
