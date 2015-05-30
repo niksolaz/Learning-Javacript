@@ -57,7 +57,13 @@
    * Expected Output : 21 
    * */
   console.log('------EX 5--------');
-  
+  var array = [1,2,3,4,5,10];
+  sum = array[0]+array[1]+array[2]+array[3]+array[4]+array[5];
+  if(typeof sum === "number"){
+   console.log("The sum of the array is: ",sum);
+  }else{
+   console.log("An element is not number. Check it out!");
+  }
   console.log('-----------------------');
    
   /**
