@@ -108,7 +108,19 @@
    * Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
    * */
   console.log('------EX 8--------');
-  
+  function prime(N){
+   var x = 2;
+   var y = N - 1;
+   while(x<y){
+    x += 1;
+    if(N%2==0){
+     console.log('Not a number prime');
+    }else if(N%x==0){
+     console.log('N is number prime: ',N);
+    }
+   }//while
+  }//function prime
+  console.log('prime: ',prime(11));
   console.log('-----------------------');
   /**
    * Write a JavaScript function that checks whether a passed string is palindrome or not?
