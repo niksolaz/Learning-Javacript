@@ -25,6 +25,7 @@
   * Each subsequent number is the sum of the previous two.
   * */
  console.log('------EX 3--------');
+ function fibonacci(){
   var i;
   var fib = [];
   fib[0] = 0;  
@@ -35,6 +36,8 @@
     fib.push(fib[i]);
   }
   console.log(fib);
+ }
+ console.log(fibonacci());
   console.log('-----------------------');
   /**
    *  Write a JavaScript program to check whether a number is even or not.
@@ -57,13 +60,24 @@
    * Expected Output : 21 
    * */
   console.log('------EX 5--------');
-  var array = [1,2,3,4,5,10];
-  sum = array[0]+array[1]+array[2]+array[3]+array[4]+array[5];
-  if(typeof sum === "number"){
-   console.log("The sum of the array is: ",sum);
-  }else{
-   console.log("An element is not number. Check it out!");
+  if(typeof Array.prototype.sum !== 'function'){
+   Array.prototype.sum = function(){
+    var total = 0;
+    for(var i=0; i<this.length; i += 1){
+     total += this[i];
+    }
+    return total;
+   };
   }
+  function sumArray(){
+   var arr = [2,3,4,5,6,10];
+   if(typeof arr.sum() === 'number'){
+   console.log('The sum of the array is: ',arr.sum());
+   }else{
+    console.log('An element of the array is not a Number');
+   }
+  }
+  sumArray();
   console.log('-----------------------');
    
   /**
@@ -112,3 +126,5 @@
    console.log('------EX 10--------');
    
    console.log('-----------------------');
+   
+   
