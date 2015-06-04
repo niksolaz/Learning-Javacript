@@ -137,7 +137,13 @@
    * Expected Output : 'Development'
    * */
    console.log('------EX 10--------');
-   
+   function longestString(str){
+    var nameString = str;
+    var regString = /\w[a-z.]+/gi;
+    var longString = nameString.match(regString);
+    console.log(longString);
+   }
+   console.log(longestString('Alfa Numeric'));
    console.log('-----------------------');
    
    
