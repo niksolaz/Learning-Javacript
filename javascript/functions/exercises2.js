@@ -115,12 +115,13 @@
     x += 1;
     if(N%2==0){
      console.log('Not a number prime');
-    }else if(N%x==0){
-     console.log('N is number prime: ',N);
+    }else if((N/N==1)&&(N%N==0)&&(N/x!=1)){
+     console.log('Number is prime: %d ',N);
     }
-   }//while
+   }
+   console.log('Prime N: ',N);//while
   }//function prime
-  console.log('prime: ',prime(11));
+  console.log('Prime: ',prime(11));
   console.log('-----------------------');
   /**
    * Write a JavaScript function that checks whether a passed string is palindrome or not?
