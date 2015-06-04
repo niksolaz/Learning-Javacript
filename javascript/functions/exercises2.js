@@ -143,7 +143,7 @@
     var longString = nameString.match(regString);
     console.log(longString);
    }
-   console.log(longestString('Alfa Numeric'));
+   console.log(longestString('Alfa Numeric String'));
    console.log('-----------------------');
    
    
