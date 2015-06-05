@@ -25,19 +25,35 @@
   * Each subsequent number is the sum of the previous two.
   * */
  console.log('------EX 3--------');
- function fibonacci(){
-  var i;
-  var fib = [];
-  fib[0] = 0;  
-  fib[1] = 1;
-  for(i=2; i<=10; i++)
-  {
-    fib[i] = fib[i-1] + fib[i-2];
-    fib.push(fib[i]);
-  }
-  console.log(fib);
+ 
+ function iterativeFibonacci(n){
+   var i;
+   var fibs = [];
+   fibs[0] = 0;
+   fibs[1] = 1;
+      
+   for(i=2; i<=n; i++){
+     fibs[i] = fibs[i-2] + fibs[i-1];
+   }
+   return fibs;
  }
- console.log(fibonacci());
+ var fibResult = [];
+ function recursiveFibonacci(n){
+   if (n===1)   
+   {  
+     return [0, 1];  
+   }   
+   else   
+   {  
+     var s = recursiveFibonacci(n - 1);  
+     s.push(s[s.length - 1] + s[s.length - 2]);  
+     return s;  
+   } 
+ 
+ }
+ console.log("Iterative fibonacci:", iterativeFibonacci(10));
+ console.log("Recursive fibonacci:", recursiveFibonacci(10));
+ 
   console.log('-----------------------');
   /**
    *  Write a JavaScript program to check whether a number is even or not.
