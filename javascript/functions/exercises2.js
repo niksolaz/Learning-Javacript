@@ -26,6 +26,21 @@
   * */
  console.log('------EX 3--------');
  
+ function fibonacci(N){  //inserito parametro N 
+  var i;
+  var fib = [];
+  fib[0] = 0;  
+  fib[1] = 1;
+  for(i=2; i<=N; i++)   // sostituito i<=10 con i<=N ; prima del cambio la funzione ritornava due volte 55
+  {
+    fib[i] = fib[i-1] + fib[i-2];
+  //  fib.push(fib[i]);           
+  }
+  //console.log(fib);
+  return fib;
+ }
+ console.log(fibonacci(10)); //valore del parametro N
+ /*  
  function iterativeFibonacci(n){
    var i;
    var fibs = [];
@@ -37,7 +52,7 @@
    }
    return fibs;
  }
- var fibResult = [];
+ 
  function recursiveFibonacci(n){
    if (n===1)   
    {  
@@ -53,7 +68,7 @@
  }
  console.log("Iterative fibonacci:", iterativeFibonacci(10));
  console.log("Recursive fibonacci:", recursiveFibonacci(10));
- 
+ */
   console.log('-----------------------');
   /**
    *  Write a JavaScript program to check whether a number is even or not.
