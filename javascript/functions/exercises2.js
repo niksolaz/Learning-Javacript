@@ -172,7 +172,9 @@
    console.log(' %s is Palindrome',str);
    return true;
   } //function
-  console.log(palind('Madam'.toUpperCase()));
+  console.log('Example 1: ',palind('Madam'.toUpperCase()));
+  console.log('Example 2: ',palind('Fox'.toUpperCase()));
+  console.log('Example 3: ',palind('MODELLO 1234321 olledom'.toUpperCase()));
   console.log('-----------------------');
   /**
    * Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
