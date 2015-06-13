@@ -160,30 +160,19 @@
    * e.g., madam or nurses run.
    * */
   console.log('------EX 9--------');
-  function palindrome(arg){
-   var str = arg.toLowerCase();
-   if(str === ""){
-    console.log("No String!");
-   }else{
-    console.log("Yes, You have a String: ",str);
-    if(str.length%2==0){
-     console.log("Not Palindrome: ",str);
-    }else{
-     console.log("Palindrome: ",str);
-    }
-    var X = str.length;
-    var i;
-    for(i=0;i<X;i++){
-      var result =(str.charAt([i]) === str.charAt(X[i] - 1));
-      if(result == true){
-       console.log(true);
-      }else{
-       console.log(false);
-      }
-    }
-   }
-  }
-  console.log(palindrome("Madam"));
+  function palind(str){
+   var len = str.length;
+   var i;
+   for(i=0;i<len;i++){
+    if(str[i] !== str[len - 1 - i]){
+     console.log('Not Palindrome');
+     return false;
+    } //if
+   }// for
+   console.log(' %s is Palindrome',str);
+   return true;
+  } //function
+  console.log(palind('Madam'.toUpperCase()));
   console.log('-----------------------');
   /**
    * Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
