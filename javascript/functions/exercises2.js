@@ -133,12 +133,17 @@
    * Write a JavaScript program to find the greatest common divisor (gcd) of two positive numbers.
    * */
   console.log('------EX 7--------');
-  
+  function gcd(a,b){
+   if(!b){
+    return a;
+   }
+   return gcd(b, a%b);
+  }
+  console.log(gcd(3456,234));
   console.log('-----------------------');
   /**
    * Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
    * */
-  console.log('------EX 8--------');
   function prime(N){
    var x = 2;
    var y = N - 1;
