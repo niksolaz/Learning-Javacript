@@ -39,3 +39,52 @@ myFunc("nick", true, function(err, data){
    console.log("I am not returning anything back.");
    console.log("===== END CALLBACK ====");
 });
+
+console.log('----------------------------------');
+
+var sum = function(x,y){
+    return x + y;
+};
+console.log('Value var sum = function(x,y){..}:   ',sum);
+var Sum = sum(4,6);
+console.log('This is result of var Sum = sum(4,6): ',Sum);
+
+var def = function(x,y){
+    return x - y;
+};
+console.log('Value var def = function(x,y){..}:   ',def);
+var Def = def(20,4);
+console.log('This is result of var Def = def(20,4): ',Def);
+
+console.log('Now i call my callback function: myFuncCallback with 3 parameters ');
+console.log('First parameter is a callback that return other 2 parameters');
+function myFuncCallback(callback,sub1,sub2){
+    if(callback && typeof callback === 'function'){  //ensure it is passed a function
+        return callback(sub1,sub2);
+    }
+};
+console.log('this return callback reported at the sum variable:  ',myFuncCallback(sum,15,25),'..with values of 15 and 25');
+console.log('this return callback reported at the def variable:  ',myFuncCallback(def,55,25),'..with values of 55 and 25');
+console.log('I can change parameters of myFuncCallback , that will run the callback defined');
+
+console.log('----------------------------------');
+
+var num = [11,3,24];
+console.log('Element into array now: ',num);
+
+num.forEach(function(val,ind){
+    console.log(val);
+});
+
+var numX = num.push(100); 
+console.log('this is number of element into array num after push(): ',numX);
+console.log(num);
+
+function showValue(val,ind){
+    console.log(val);
+}
+var num;  
+num.forEach(showValue); // I'm passed name of functiont like callback
+
+
+
