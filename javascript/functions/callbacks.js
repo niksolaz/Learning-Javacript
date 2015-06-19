@@ -84,7 +84,23 @@ function showValue(val,ind){
     console.log(val);
 }
 var num;  
-num.forEach(showValue); // I'm passed name of functiont like callback
+num.forEach(showValue); // I'm passed name of functiont like 
 
+console.log('------------------------------------');
 
+var incrementor = function(increase){ //The incrementor variable is assigned a function that returns another function
+    return function(value){
+        return increase + value; //The returned function increments its argument with the argument of the function that returns
+    }
+};
+/*
+In other words, the function generates an incrementor function that increments a numeric value to a predefined number
+*/
+// example ...
 
+var increaseOfFive = incrementor(5);
+
+console.log('Increase number 4 by 5 and result: ',increaseOfFive(4)); //result 4 + 5 = 9
+console.log('Increase number 15 by 5 and result: ',increaseOfFive(15)); // result 15 + 5 = 20
+
+console.log('------------------------------------');
