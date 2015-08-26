@@ -31,7 +31,7 @@ var app = <Div color="blue"/>;
 var app = React.createElement(Div, {color:"blue"});
 React.render(app,document.getElementById('new_example'));
 
-var Form = MyFormComponent;
+
 var App = (
   <Form method="post">
     <Form.textarea rows="4" cols="50"/>
@@ -59,4 +59,22 @@ var App = (
 );
 
 React.render(App,document.getElementById('form_container'));
+
+var AppNav = (
+	<Nav color="red">
+		<Nav.a rel="search"/>
+		<Nav.a rel="search"/>
+		<Nav.a rel="search"/>
+	</Nav>
+);
+var AppNav = (
+	React.createElement(Nav,null,{ color:"red" },
+		React.createElement(Nav.a,null,{ rel:"search" },
+		React.createElement(Nav.a,null,{ rel:"search" },)
+		React.createElement(Nav.a,null,{ rel:"search" },)
+		)
+	)
+);
+React.render(AppNav,document.getElementById('nav_container'));
+
 
