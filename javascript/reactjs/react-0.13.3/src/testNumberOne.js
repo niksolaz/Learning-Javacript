@@ -36,7 +36,7 @@ var App = (
   <Form method="post">
     <Form.textarea rows="4" cols="50"/>
     <Form.Label form="label"/>
-    <Form.Input type="submit" value="Submit"/>
+    <Form.button type="submit" value="Submit"/>
   </Form>
 );
 var App = (
@@ -50,9 +50,9 @@ var App = (
       React.createElement(Form.Label, null{ 
       											form:"label"
       									   }),
-      React.createElement(Form.Input, null,{
+      React.createElement(Form.button, null,{
 	  											type:"submit",
-	  											value:"Submit"
+	  											value:"Submit",
       										})
     )
   )
