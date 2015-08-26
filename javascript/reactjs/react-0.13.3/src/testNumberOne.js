@@ -27,7 +27,7 @@ var myElement = <MyComponent someProperty={true} />;
 React.render(myElement, document.getElementById('example'));
 
 var Div;
-var app = <Div color="blue" />;
+var app = <Div color="blue"/>;
 var app = React.createElement(Div, {color:"blue"});
 React.render(app,document.getElementById('new_example'));
 
