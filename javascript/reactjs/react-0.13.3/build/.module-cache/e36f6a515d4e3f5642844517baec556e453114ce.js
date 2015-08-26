@@ -16,7 +16,7 @@ var Ciao = React.createClass({displayName: "Ciao",
     	return React.createElement("div", null, "Ciao ", this.props.name);
    }
 });
-React.render(React.createElement(Ciao, {name: "Nicola"}),document.getElementById('new_container'));
+React.render(React.createElement(Ciao, {name: "Nicola"}),document.getElementById('container2'));
 
 var MyComponent = React.createClass({displayName: "MyComponent",
 	render: function(){

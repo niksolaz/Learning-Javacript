@@ -1,8 +1,3 @@
-React.render(
-  React.createElement('h1', null, 'Hello, world!'),
-  document.getElementById('example_start')
-);
-
 var Hello = React.createClass({displayName: "Hello",
     render: function() {
         return React.createElement("div", null, "Hello ", this.props.name);
@@ -16,7 +11,7 @@ var Ciao = React.createClass({displayName: "Ciao",
     	return React.createElement("div", null, "Ciao ", this.props.name);
    }
 });
-React.render(React.createElement(Ciao, {name: "Nicola"}),document.getElementById('new_container'));
+React.render(React.createElement(Ciao, {name: "Nicola"}),document.getElementById('container2'));
 
 var MyComponent = React.createClass({displayName: "MyComponent",
 	render: function(){
