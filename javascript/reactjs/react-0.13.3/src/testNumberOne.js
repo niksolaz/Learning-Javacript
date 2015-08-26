@@ -26,13 +26,9 @@ var MyComponent = React.createClass({
 var myElement = <MyComponent someProperty={true} />;
 React.render(myElement, document.getElementById('example'));
 
-var Nav, Profile;
-var app = <Nav color="blue" /><Profile>click</Profile></Nav>;
-var app = React.createElement(
-	Nav, 
-	{color:"blue"},
-	React.createElement(Profile,null,"click")
-	);
+var Div;
+var app = <Div color="blue" />;
+var app = React.createElement(Div, {color:"blue"});
 React.render(app,document.getElementById('new_example'));
 
 
