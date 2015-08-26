@@ -33,18 +33,30 @@ React.render(app,document.getElementById('new_example'));
 
 var Form = MyFormComponent;
 var App = (
-  <Form>
-    <Form.Row>
-      <Form.Label />
-      <Form.Input />
-    </Form.Row>
+  <Form method="post">
+    <Form.textarea rows="4" cols="50"/>
+    <Form.Label form="label"/>
+    <Form.Input type="submit" value="Submit"/>
   </Form>
 );
-var MyFormComponent = React.createClass({ displayName: "Form", });
+var App = (
+  React.createElement(Form, null,{
+  									method:"post"
+  								},
+    React.createElement(Form.textarea, null,{
+    											rows:"4",
+    											cols:"50"
+    										}
+      React.createElement(Form.Label, null{ 
+      											form:"label"
+      									   }),
+      React.createElement(Form.Input, null,{
+	  											type:"submit",
+	  											value:"Submit"
+      										})
+    )
+  )
+);
 
-MyFormComponent.Row = React.createClass({ displayName: "Form.Row",  });
-MyFormComponent.Label = React.createClass({ displayName: "Form.Label",  });
-MyFormComponent.Input = React.createClass({ displayName: "Form.Input",  });
-
-React.render(MyFormComponent,document.getElementById('form_container'));
+React.render(App,document.getElementById('form_container'));
 

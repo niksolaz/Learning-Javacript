@@ -40,14 +40,15 @@ var App = (
     )
   )
 );
-var App = (
-  React.createElement(Form, null,
-    React.createElement(Form.Row, null,
-      React.createElement(Form.Label, null),
-      React.createElement(Form.Input, null)
-    )
-  )
-);
+var MyFormComponent = React.createClass({ displayName: "Form", });
 
-React.render(App,document.getElementById('form_container'));
+MyFormComponent.Row = React.createClass({ displayName: "Form.Row",  });
+MyFormComponent.Label = React.createClass({displayName: "Label",
+	render:function(){
+		return Label;
+	}
+});
+MyFormComponent.Input = React.createClass({ displayName: "Form.Input",  });
+
+React.render(MyFormComponent,document.getElementById('form_container'));
 
