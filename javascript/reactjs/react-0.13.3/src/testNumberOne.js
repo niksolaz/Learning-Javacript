@@ -85,14 +85,22 @@ var FancyCheckbox = React.createClass({
     return (
       <div className={fancyClass} onClick={this.props.onClick}>
         {this.props.children}
+        <div.button type="submit" value="Submit"/>
       </div>
     );
   }
 });
-var FancyCheckbox = React.createElement(Div,null,{ 
+var FancyCheckbox = (React.createElement(Div,null,{ 
 													className:fancyClass, 
 												   	onClick:this.props.onClick
-												   	);
+												   },
+					React.createElement(Div.button, null,{
+	  											type:"submit",
+	  											value:"Submit",
+      										}
+      				)
+      				)
+);
 React.render(
   <FancyCheckbox checked={true} onClick={console.log.bind(console)}>
     Hello world!
