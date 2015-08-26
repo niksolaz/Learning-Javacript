@@ -14,7 +14,7 @@ React.render(<Hello name="World" />, document.getElementById('container'));
 var Ciao = React.createClass({
 	render: function(){
     	return <div>Ciao {this.props.name}</div>;
-   }
+    }
 });
 React.render(<Ciao name="Nicola"/>,document.getElementById('new_container'));
 
@@ -31,4 +31,20 @@ var app = <Div color="blue"/>;
 var app = React.createElement(Div, {color:"blue"});
 React.render(app,document.getElementById('new_example'));
 
+var Form = MyFormComponent;
+var App = (
+  <Form>
+    <Form.Row>
+      <Form.Label />
+      <Form.Input />
+    </Form.Row>
+  </Form>
+);
+var MyFormComponent = React.createClass({ displayName: "Form", });
+
+MyFormComponent.Row = React.createClass({ displayName: "Form.Row",  });
+MyFormComponent.Label = React.createClass({ displayName: "Form.Label",  });
+MyFormComponent.Input = React.createClass({ displayName: "Form.Input",  });
+
+React.render(MyFormComponent,document.getElementById('form_container'));
 

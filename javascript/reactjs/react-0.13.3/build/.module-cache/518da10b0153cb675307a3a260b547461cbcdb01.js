@@ -46,5 +46,14 @@ MyFormComponent.Row = React.createClass({ displayName: "Form.Row",  });
 MyFormComponent.Label = React.createClass({ displayName: "Form.Label",  });
 MyFormComponent.Input = React.createClass({ displayName: "Form.Input",  });
 
-React.render(MyFormComponent,document.getElementById('form_container'));
+var App = (
+  React.createElement(Form, null,
+    React.createElement(Form.Row, null,
+      React.createElement(Form.Label, null),
+      React.createElement(Form.Input, null)
+    )
+  )
+);
+
+React.render(App,document.getElementById('form_container'));
 

@@ -14,7 +14,7 @@ React.render(React.createElement(Hello, {name: "World"}), document.getElementByI
 var Ciao = React.createClass({displayName: "Ciao",
 	render: function(){
     	return React.createElement("div", null, "Ciao ", this.props.name);
-    }
+   }
 });
 React.render(React.createElement(Ciao, {name: "Nicola"}),document.getElementById('new_container'));
 
@@ -29,22 +29,8 @@ React.render(myElement, document.getElementById('example'));
 var Div;
 var app = React.createElement(Div, {color: "blue"});
 var app = React.createElement(Div, {color:"blue"});
-React.render(app,document.getElementById('new_example'));
+React.render(app,document.getElementById('new_example'),function(file){
+	if(file){ console.log("<p>Ciao sono una callback</p>");}else{console.log('ERROR');};
+});
 
-var Form = MyFormComponent;
-var App = (
-  React.createElement(Form, null, 
-    React.createElement(Form.Row, null, 
-      React.createElement(Form.Label, null), 
-      React.createElement(Form.Input, null)
-    )
-  )
-);
-var MyFormComponent = React.createClass({ displayName: "Form", });
-
-MyFormComponent.Row = React.createClass({ displayName: "Form.Row",  });
-MyFormComponent.Label = React.createClass({ displayName: "Form.Label",  });
-MyFormComponent.Input = React.createClass({ displayName: "Form.Input",  });
-
-React.render(MyFormComponent,document.getElementById('form_container'));
 
