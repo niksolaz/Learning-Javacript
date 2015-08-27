@@ -35,6 +35,6 @@ var ProfileLink = React.createClass({
 });
 
 React.render(
-  <Avatar username="pwh" />,
+  React.createElement(Avatar,null,{ username:"pwh"}),
   document.getElementById('example_two')
 );
