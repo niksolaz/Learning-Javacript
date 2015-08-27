@@ -30,6 +30,12 @@ React.render(Msg,document.getElementById('message'));
 
 //Color switch case
 var Colors = React.createClass({
+				getInitialState :  function (){
+					return { color: '' };
+				},
+				handleCreate : function(e){
+					this.setState({ color : this.state.color});
+				},
 				render:function(){
 					return (
 					  <section>
