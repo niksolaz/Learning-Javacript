@@ -28,14 +28,14 @@ var Msg = (
 );
 React.render(Msg,document.getElementById('message'));
 
-var Color;
 //Color switch case
-var Colors = React.createElement(Color,null,function(){
-				return (
+var Colors = React.createClass({
+				render:function(){
+					return (
 					  <section>
 					    <h1>Color</h1>
 					    <h3>Name</h3>
-					    <p>{this.state.color || "gray"}</p>
+					    <p>{this.state.color || "white"}</p>
 					    <h3>Hex</h3>
 					    <p>
 					      {(() => {
@@ -48,6 +48,8 @@ var Colors = React.createElement(Color,null,function(){
 					      })()}
 					    </p>
 					  </section>
-				);
+					);
+				},
+				
 			});
 React.render(Colors,document.getElementById('color'));
