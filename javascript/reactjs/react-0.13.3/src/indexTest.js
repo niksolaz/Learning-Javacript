@@ -13,7 +13,7 @@ var Msg = (
 	</Div>
 );
 var Msg = (
-	React.createElement(Div,null,{ style:"color:#DC143C" },
+	React.createElement(Div,null,{ style:"background-color:#DC143C" },
 		React.createElement(Div.Form,null,{ method:"post" },
 			React.createElement(Div.Form.textarea,null,{ 
 														rows:"10",
@@ -27,3 +27,27 @@ var Msg = (
 	)
 );
 React.render(Msg,document.getElementById('message'));
+
+var Color;
+//Color switch case
+var Colors = React.createElement(Color,null,function(){
+				return (
+					  <section>
+					    <h1>Color</h1>
+					    <h3>Name</h3>
+					    <p>{this.state.color || "gray"}</p>
+					    <h3>Hex</h3>
+					    <p>
+					      {(() => {
+					        switch (this.state.color) {
+					          case "red":   return "#FF0000";
+					          case "green": return "#00FF00";
+					          case "blue":  return "#0000FF";
+					          default:      return "#FFFFFF";
+					        }
+					      })()}
+					    </p>
+					  </section>
+				);
+			});
+React.render(Colors,document.getElementById('color'));
