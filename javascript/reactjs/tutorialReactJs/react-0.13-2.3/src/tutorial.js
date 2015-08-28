@@ -6,9 +6,14 @@ React.render(
       );
 //created first component MyFirstComponent
 var MyFirstComponent = React.createClass({ //created class with craeteClass
+	getInitialState: function(){ //specs
+		return {
+			count: 5
+		}
+	},
 	render: function(){ //used method render ; it's return syntax DOM in html
 		return (
-			<h2> Hello {this.props.name}. I am my first Component</h2> //create props
+			<h2>{this.props.count}</h2> //create props
 		);
 	}
 });
