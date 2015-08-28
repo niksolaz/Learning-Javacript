@@ -13,5 +13,5 @@ var MyFirstComponent = React.createClass({displayName: "MyFirstComponent",
 });
 React.render(
 	React.createElement(MyFirstComponent, null),
-	document.getElementById('myDiv')
+	document.getElementById('example')
 );
