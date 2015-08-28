@@ -1,9 +1,4 @@
-// Create file in directory src
 
-React.render(
-        <h1>Hello Tutorial React!</h1>,
-        document.getElementById('example')
-      );
 //created first component MyFirstComponent
 var MyFirstComponent = React.createClass({ //created class with craeteClass
 	//events
