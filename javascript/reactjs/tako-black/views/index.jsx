@@ -3,7 +3,7 @@ var React = require('react');
 var TodoBox = React.createClass({
   render: function() {
     return (
-      <div className="todoBox">
+      <div className = "todoBox">
         <h1>Todos</h1>
         <TodoList />
         <TodoForm />
@@ -16,7 +16,7 @@ var TodoList = React.createClass({
   // Write code here
   render: function() {
     return (
-      <div class = "todoList">
+      <div className = "todoList">
         I am a TodoList.
       </div>
     );
@@ -27,7 +27,7 @@ var TodoForm = React.createClass({
   // Write code here
   render: function() {
     return (
-      <div class = "todoForm">
+      <div className = "todoForm">
         I am a TodoForm.
       </div>
     );
