@@ -16,7 +16,7 @@ var MyFirstComponent = React.createClass({displayName: "MyFirstComponent", //cre
 	render: function(){ //used method render ; it's return syntax DOM in html
 		return (
 			React.createElement("div", {class: "my-component"}, 
-        		React.createElement("h1", null, "Count: ", this.state.count), 
+        		React.createElement("h1", null, "Count: ", this.state.count), " //create props", 
         		React.createElement("button", {type: "button", onClick: this.incrementCount}, "Increment")
       		) 
 		);

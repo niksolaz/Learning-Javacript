@@ -16,7 +16,7 @@ var MyFirstComponent = React.createClass({ //created class with craeteClass
 	render: function(){ //used method render ; it's return syntax DOM in html
 		return (
 			<div class="my-component">
-        		<h1>Count: {this.state.count}</h1> //create props
+        		<h1>Count: {this.state.count}</h1>
         		<button type="button" onClick={this.incrementCount}>Increment</button>
       		</div> 
 		);
@@ -24,5 +24,5 @@ var MyFirstComponent = React.createClass({ //created class with craeteClass
 });
 React.render(  
 	<MyFirstComponent/>, //component created! 
-	document.getElementById('myDiv') //myDiv name attribute id
+	document.getElementById("myDiv") //myDiv name attribute id
 );
