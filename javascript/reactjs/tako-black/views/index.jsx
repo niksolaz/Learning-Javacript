@@ -33,6 +33,6 @@ var TodoForm = React.createClass({
     );
   }
 });
-React.render(TodoBox,document.getElementById("todoBox"));
+
 
 module.exports = TodoBox;
