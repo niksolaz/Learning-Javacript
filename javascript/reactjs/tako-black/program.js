@@ -8,8 +8,10 @@ app.engine('jsx', require('express-react-views').createEngine());
 
 require('node-jsx').install();
 
+var data = [];
+
 app.use('/', function(req, res) {
-  res.render('index', '');
+  res.render('index', {data: data});
 });
 
 app.listen(app.get('port'), function() {});
