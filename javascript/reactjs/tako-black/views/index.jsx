@@ -30,14 +30,15 @@ var TodoList = React.createClass({
 var Todo = React.createClass({
   render: function() {
     return (
-      <div className = "todo">
-        <p>{this.props.title}</p>
-      </div>
+      <tr>
+        <td style=({border:"1px solid black"})>{this.props.title}</td>
+        <td style=({border:"1px solid black"})>{this.props.children}</td>
+      </tr>
     );
   }
 });
 
-var TodoForm = React.createClass({
+var TodoForm = React.createClass({ 
   // Write code here
   render: function() {
     return (
@@ -45,7 +46,7 @@ var TodoForm = React.createClass({
         I am a TodoForm.
       </div>
     );
-  }
+  } 
 });
 
 
