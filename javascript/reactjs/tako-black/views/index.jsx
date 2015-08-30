@@ -31,6 +31,12 @@ var Todo = React.createClass({
   propTypes: {
     title: React.PropTypes.string.isRequired
   },
+  getInitialState: function(){
+    return { checked: false }
+  },
+  handleChange: function(event){
+    this.setState({onChange: event.target.onChange})
+  },
   render: function() {
     return (
       <tr>
