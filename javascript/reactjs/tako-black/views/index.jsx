@@ -59,5 +59,11 @@ var TodoForm = React.createClass({
   } 
 });
 
+var style = {
+  tableContent: {
+    border: "1px solid black"
+  }
+};
+
 
 module.exports = TodoBox;
