@@ -16,6 +16,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 require('node-jsx').install();
 var TodoBox = require('./views/index.jsx');
 
+
 var data = [
 			{title:'Shopping',key:'Shopping',detail:process.argv[3]},
 			{title:'Hair cut',key:'Hair cut',detail:process.argv[4]}
@@ -48,4 +49,9 @@ app.use('/', function(req, res) {
 });
 
 
-app.listen(app.get('port'), function() {});
+var server = app.listen(app.get('port'), function() {
+	var host = server.address().address;
+	var port = server.address().port;
+
+	console.log('Listening at http://%s:%s ',host,port);
+});
