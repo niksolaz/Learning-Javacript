@@ -1,7 +1,8 @@
 var React = require('react');
-var Router = require('react-router'),
+var Router = require('react-router');
 var RouteHandler = Router.RouteHandler;
 var Header = require('./Header.jsx');
+var css = require('../css/base.css');
 
 var Root = React.createClass({
   render: function () {
@@ -13,8 +14,9 @@ var Root = React.createClass({
       <html>
         <head>
           <title>{this.props.title}</title>
+          <style dangerouslySetInnerHTML={{ __html: css }} />
         </head>
-        <body>
+        <body className='p2'>
           <Header />
           <RouteHandler {...this.props} />
           <script
@@ -26,10 +28,10 @@ var Root = React.createClass({
       </html>
     );
   }
-});
+})
 
 function safeStringify(obj) {
   return JSON.stringify(obj).replace(/<\/script/g, '<\\/script').replace(/<!--/g, '<\\!--')
-};
+}
 
 module.exports = Root;
