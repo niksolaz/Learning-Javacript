@@ -27,7 +27,15 @@ var TodoList = React.createClass({
     this.setState({detailValue:event.target.value});
   }, 
   addTodo: function() { 
-    this.setState({addTodo:event.target.addTodo});
+    var addDataList = {
+      this.state.titleValue,
+      this.state.detailValue
+    };
+    addDataList.push({
+      title: this.state.titleValue,
+      detail: this.state.detailValue
+    });
+    
   }, 
   render: function() {
     var todo = this.props.data.map(function(obj) {
