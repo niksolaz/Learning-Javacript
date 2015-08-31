@@ -8,7 +8,7 @@ app.engine('jsx', require('express-react-views').createEngine());
 
 require('node-jsx').install();
 
-var data = [{'Shopping':'Milk'},{'Hair cut':'13:00'}];
+var data = [{title:'Shopping',detail:'Milk'},{title:'Hair cut',detail:'13:00'}];
 
 app.use('/', function(req, res) {
   res.render('index', {data: data});
