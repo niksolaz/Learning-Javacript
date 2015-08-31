@@ -1,12 +1,19 @@
 {
-  "name": "ls",
+  "name": "niksolaz",
   "version": "1.0.0",
-  "description": "",
+  "description": "My personal Page",
   "main": "index.js",
   "scripts": {
+    "webpack": "webpack --progress --colors",
+    "dev": "webpack-dev-server --progress --colors",
+    "start": "npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niksolaz/Learning-Javacript/tree/master/javascript/reactjs/react-stitic-site"
+  },
+  "author": "Nicola Solazzo",
   "license": "ISC",
   "devDependencies": {
     "jsx-loader": "^0.13.2",
@@ -15,10 +22,5 @@
     "static-site-generator-webpack-plugin": "^1.1.2",
     "webpack": "^1.12.0",
     "webpack-dev-server": "^1.10.1"
-  },
-  "scripts": {
-  "webpack": "webpack --progress --colors",
-  "dev": "webpack-dev-server --progress --colors",
-  "start": "npm run dev"
   }
 }
