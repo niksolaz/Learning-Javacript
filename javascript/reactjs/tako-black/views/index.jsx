@@ -26,16 +26,13 @@ var TodoList = React.createClass({
   changeDetail: function(event) { 
     this.setState({detailValue:event.target.value});
   }, 
-  addTodo: function() { 
-    var addDataList = {
-      this.state.titleValue,
-      this.state.detailValue
-    };
+  addTodo: function(event) { 
+    var addDataList = this.state.data;
     addDataList.push({
       title: this.state.titleValue,
       detail: this.state.detailValue
     });
-    
+    this.setState({data: event.target.addDataList});
   }, 
   render: function() {
     var todo = this.props.data.map(function(obj) {
