@@ -1,3 +1,9 @@
+var React = require('react'); 
+var DOM = React.DOM; 
+var body = DOM.body; 
+var div = DOM.div; 
+var script = DOM.script;
+var browserify = require('browserify');
 var express = require('express');
 var app = express();
 
@@ -7,6 +13,7 @@ app.set('views', __dirname + '/views');
 app.engine('jsx', require('express-react-views').createEngine());
 
 require('node-jsx').install();
+var TodoBox = require('./views/index.jsx');
 
 var data = [
 			{title:'Shopping',key:'Shopping',detail:process.argv[3]},
