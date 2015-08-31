@@ -35,7 +35,7 @@ var Todo = React.createClass({
     return { checked: false }
   },
   handleChange: function(event){
-    this.setState({onChange: event.target.onChange})
+    this.setState({checked: event.target.checked})
   },
   render: function() {
     return (
