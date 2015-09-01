@@ -6,8 +6,11 @@ var Header = React.createClass({
   render: function () {
     return (
       <header>
-        <Link to='/'>Index</Link>
-        <Link to='/about'>About</Link>
+      	<nav>
+	        <Link to='/'>Index</Link> |
+	        <Link to='/about'>About</Link> |
+	        <Link to='/contact'>Contact</Link>
+        </nav>
       </header>
     );
   }
