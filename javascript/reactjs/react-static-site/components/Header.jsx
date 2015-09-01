@@ -7,9 +7,11 @@ var Header = React.createClass({
     return (
       <header>
       	<nav>
-	        <Link to='/'>Index</Link> |
-	        <Link to='/about'>About</Link> |
-	        <Link to='/contact'>Contact</Link>
+      		<div class="mb1">
+		        <Link to='/'><button class="btn btn-primary mb1 bg-blue">Index</button></Link> |
+		        <Link to='/about'><button class="btn btn-primary mb1 bg-green">About</button></Link> |
+		        <Link to='/contact'><button class="btn btn-primary mb1 bg-orange">Contact</button></Link>
+        	</div>
         </nav>
       </header>
     );
