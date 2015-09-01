@@ -1,8 +1,8 @@
 module.exports = {
-	title: 'My Static Site : Solazzo Nicola',
+	title: 'Solazzo Nicola',
 	routes: [ 
 		'/',
-		'/about'
+		'/about',
 		'/contact'
 	]
 };
