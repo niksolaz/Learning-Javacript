@@ -6,8 +6,12 @@ var Header = React.createClass({
   render: function () {
     return (
       <header>
-        <Link to='/'>Home</Link> |
-        <Link to='/about'>About Me</Link>
+        <nav className="clearfix white bg-black">
+          <div className="sm-col">
+            <Link to='/' className="btn py2">Home</Link>
+            <Link to='/about' className="btn py2">About Me</Link>
+          </div>
+        </nav>
       </header>
     );
   }
