@@ -16,12 +16,13 @@ var Index = React.createClass({
 	          	  <div className="col col-12 center px3 py4 black bg-white bg-cover bg-center">
 	          	  	<h2 className="h1 h0-responsive caps mt4 mb0 regular">CODE</h2>
 	          	  </div>
-				  <div className="col col-12 center px3 py4 white bg-gray bg-cover bg-center">
-				  	<p className="col col-12 " className="center px3 py4 white bg-gray bg-cover bg-center">
-				  	Node.js Python Javascript
+				  <div className="col col-12 center px3 py4 black bg-silver bg-cover bg-center">
+				  	<p className="col col-12 " className="center px3 py4 black bg-silver bg-cover bg-center">
+				  	Node.js Python Javascript, to learn more, visit my 
+				  	<a href="https://github.com/niksolaz"> GitHub </a>
 				  	</p>
 				  </div>
-				  <div className="col col-12 ">.col.col-6</div>
+				  <div className="col col-12 "></div>
 			  </div>
         </section>
       </main>
