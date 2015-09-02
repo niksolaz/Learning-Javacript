@@ -2,6 +2,7 @@ var React = require('react');
 var Router = require('react-router');
 var RouteHandler = Router.RouteHandler;
 var Header = require('./Header.jsx');
+var Footer = require('./Footer.jsx')
 var css = require('../css/base.css');
 
 var Root = React.createClass({
@@ -19,6 +20,7 @@ var Root = React.createClass({
         <body className='p2'>
           <Header />
           <RouteHandler {...this.props} />
+          <Footer />
           <script
             id='initial-props'
             type='application/json'

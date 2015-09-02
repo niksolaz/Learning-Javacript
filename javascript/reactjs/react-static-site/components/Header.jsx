@@ -10,6 +10,7 @@ var Header = React.createClass({
           <div className="sm-col">
             <Link to='/' className="btn py2">Home</Link>
             <Link to='/about' className="btn py2">About Me</Link>
+            <Link to='/contact' className="btn py2">Contact Me</Link>
           </div>
         </nav>
       </header>

@@ -17,6 +17,8 @@
   "license": "ISC",
   "devDependencies": {
     "basscss": "^7.0.4",
+    "basscss-background-images": "0.0.9",
+    "basscss-utility-headings": "0.0.6",
     "css-loader": "^0.16.0",
     "cssnext-loader": "^1.0.1",
     "jsx-loader": "^0.13.2",
