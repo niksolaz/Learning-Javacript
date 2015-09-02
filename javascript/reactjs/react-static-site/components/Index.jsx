@@ -2,7 +2,7 @@ var React = require('react');
 
 var Index = React.createClass({
   render: function () {
-  	var style= {backgroundImage: "url('https://d262ilb51hltx0.cloudfront.net/max/2000/1*DZwdGMaeu-rvTroJYui6Uw.jpeg')"};
+  	var style= {backgroundImage: "url('http://www.metalinjection.net/wp-content/uploads/2014/07/space-metal.jpg')"};
     return (
       <main>
 	   <section id="index-title" className="clearfix border-none">
